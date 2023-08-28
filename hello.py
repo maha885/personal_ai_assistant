@@ -35,11 +35,14 @@ def chat(chats):
 
 
 if __name__=="__main__":
+
     say("Hello")
-    print("Listening..")
-    texts=takeCommand()
-    say("I am preparing an answer for you")
-    answer=chat(texts)
-    say(answer)
+    while True:
+        print("Listening..")
+        texts=takeCommand()
+        say("I am preparing an answer for you")
+        answer=chat(texts)
+        say(answer)
+    
 
     
